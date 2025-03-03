@@ -1,0 +1,10 @@
+spring.application.name: helloUniverse
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+    groups-order: asc
