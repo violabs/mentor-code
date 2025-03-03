@@ -8,7 +8,13 @@ class GreetingServiceTDDTest {
     @Test
     fun `getGreeting returns the greeting with default details if inputs not set`() {
         // arrange
-        val expected = Greeting()
+        val expected = Greeting(
+            message = "Hello, Universe!",
+            metadata = mapOf(
+                "version" to "1.0",
+                "mode" to "dev"
+            )
+        )
 
         // act
         val result = greetingService.getGreeting()
