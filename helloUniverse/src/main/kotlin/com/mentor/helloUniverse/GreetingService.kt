@@ -9,9 +9,9 @@ private val METADATA = mapOf(
 
 @Service
 class GreetingService {
-    fun getGreeting(name: String? = null): Greeting? {
+    fun getGreeting(name: String = "Universe"): Greeting {
         return Greeting(
-            message = "Hello, Universe!",
+            message = "Hello, $name!",
             metadata = METADATA
         )
     }
