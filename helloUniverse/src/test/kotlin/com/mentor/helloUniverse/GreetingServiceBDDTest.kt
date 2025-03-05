@@ -34,8 +34,10 @@ class GreetingServiceBDDTest {
     @Test
     fun `getGreeting returns the greeting with custom name if inputs set`() = TestStyle.bdd {
         given("a request with a name 'World'") {
+            val name = "World"
+
             whenever("we call for a greeting") {
-                val result = greetingService.getGreeting(name = "World")
+                val result = greetingService.getGreeting(name = name)
 
                 then("expect returned 'Hello World!' with metadata") {
                     val expected = Greeting(
