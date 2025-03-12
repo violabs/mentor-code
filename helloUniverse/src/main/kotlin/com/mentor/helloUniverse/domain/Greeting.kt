@@ -1,4 +1,4 @@
-package com.mentor.helloUniverse
+package com.mentor.helloUniverse.domain
 
 data class Greeting(
     val message: String? = null,

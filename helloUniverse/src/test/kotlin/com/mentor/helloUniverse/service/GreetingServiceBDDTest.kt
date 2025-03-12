@@ -1,5 +1,7 @@
-package com.mentor.helloUniverse
+package com.mentor.helloUniverse.service
 
+import com.mentor.helloUniverse.TestStyle
+import com.mentor.helloUniverse.domain.Greeting
 import org.junit.jupiter.api.Test
 
 class GreetingServiceBDDTest {
